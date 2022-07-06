@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head><title>Adanayı Tanıyalım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="sitemstyle.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+
+<link rel="icon" type="image/png" sizes="16x16"  href="slider/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+
+<div class="navbar" id="nav2">
+  <a class="p2" href="#" id="baslik">Adana'yı Tanıyalım</a>
+ <a href="#ileti">İletişim</a>
+  <div class="dropdown">
+    <button class="dropbtn">Kültürel Bilgiler
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      
+      <a href="#mimari">Adana Mimarisi</a>
+      <a href="#mtfk">Adana Mutfağı</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Coğrafi Bilgiler 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#mrkz" style="font-size: 75%;">Adana'nın Merkez İlçeleri</a>
+    </div>
+  </div> 
+  
+ <a href="#trh">Tarihçe</a>
+  <a href="">Anasayfa</a>
+</div><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="slider/ad111.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="slider/ad2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="slider/ad33.jpg" style="width:100%; object-fit: cover;">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br id="trh">
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><br><br>
+<hr class="divs"><h2 class="baslik2"><b>TARİHÇE</b></h2>
+
+
+<div class="divs">
+  <p><strong>Adana</strong> İlinin tarihi ilk çağlara (M.Ö. 3000) yıllarına kadar uzanmaktadır. Adana'nın Seyhan Nehri kıyısına bir konak yeri olarak kurulduğu tahmin edilmektedir. <strong>Adana</strong>'ya ait en eski yazılı kayıtlara ilk defa, Anadolu'nun en köklü medeniyetlerinden olan Hititlerin Kava Kitabelerinde rastlanmaktadır. Bu kabilelerdeki bir yazıtta <strong>Adana</strong> ve çevresinden Uru Adania(Adana Beldesi) olarak bahsedilmektedir. Yöreye M.Ö. yaşayan kavimlere Danuna ismi verildiği kayıtlarda mevcuttur. Bir efsaneye göre gök tanrısı Uranüs'ün <strong>Adanus</strong> ve Sarus adında iki oğlu <strong>Adana</strong> civarına savaşarak gelmişler, <strong>Adanus</strong> adını kendi kurdukları şehre vermiştir. Seyhan Nehri de Sarus adını almıştır.
+  </p>
+
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/L9yrm4C3wb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+</div>
+
+<hr class="divs"><h2 class="baslik2"><b>COĞRAFİ BİLGİLER</b></h2>
+
+<div class="divs"><br><p> Adana Toros daglarinin güneyinde yer alan Çukurova'da Seyhan nehri üzerinde kurulmustur. Akdeniz’e yaklasik 160 km'lik kiyisi bulunan Adana Avrupa'yi, Asya'ya baglayan önemli ulasim yollari üzerindedir. </p><p>Orta dogu ile kara ve demiryolu baglantisi Adana üzerinden yapilir. Bu baglanti Toroslar'da Gülek Bogazi'ndan saglanir. Il yüzölçümünün % 49 daglik, %23 yaylalar ve %27 ova ve düzlük alandir. Toroslarin etekleri Akdeniz’e dogru ova biçimini alir. Iç Anadoludan dogan Seyhan ve Ceyhan Nehirleri Akdenize akar. </p></div><br id="mrkz"><br>
+<hr class="divs"><h2 class="baslik2"><b>Adana'nın Merkez İlçeleri</b></h2>
+
+<div class="divs"><center>
+  <br><div class="w3-container">
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="slider/c1.jpg" alt="çukurova" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="baslik2"><b style="color: green;">ÇUKUROVA</b></p>
+      <p>Çukurova, Adana ilinin bir ilçesidir. Çukurova Adana'nın merkez ilçelerinden birisidir. Seyhan'dan ayrılarak ilçe olmuştur. Yüzölçümü 240 km²'dir. Adını Türkiye'de verimli topraklarıyla ünlü olan Çukurova'dan almıştır.</p>
+    </div>
+  </div>
+</div><br>
+<div class="w3-container">
+ 
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="slider/sc.jpeg" alt="Sarıçamilçesi" style="width:100%">
+    <div class="w3-container w3-center">
+        <p class="baslik2"><b style="color: green;">SARIÇAM</b></p>
+      <p>Sarıçam ilçesi, Adana ili, Yüreğir ilçesinin Kuzey – Doğu kısmının ayrılması ile Buruk, Sofulu, Baklalı, İncirlik, Suluca ve Kürkçüler alt kademe belediyelerinin tüzel kişilikleri sona erdirilerek 22 Mart 2008 tarihinde oluşturulmuş bir ilçedir. İsmini ilçenin kuzeyinde bulunan Sarıçam ormanlarından almıştır.
+
+</p>
+    </div>
+  </div><br>
+  <div class="w3-card-4" style="width:50%">
+    <img src="slider/sy1.jpg" alt="seyhanilçesi" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="baslik2"><b style="color: green;">SEYHAN</b></p>
+      <p>Seyhan, Adana'nın ilk yerleşim alanı olmakla beraber şu anda şehrin yönetim, iş ve kültür merkezidir. Tarihî Tepebağ mahallesi ve Büyük Saat, Ulu Camii, Ramazaoğlu Konağı ve Sabancı Merkez Camii gibi önemli yapıları bünyesinde barındırmaktadır.</p>
+    </div>
+  </div><br>
+  <div class="w3-card-4" style="width:50%">
+    <img src="slider/yr1.jpg" alt="yüreğir" style="width:100%">
+    <div class="w3-container w3-center">
+      <p><b style="color: green;">YÜREĞİR</b></p>
+      <p>Adana'nın merkez ilçesi olan Yüreğir, 5 Haziran 1986'da belediye olmuştur. İsmini 1250-1352 yılları arasında Türk Oğuz boyundan Üçoklara ait kavmin buraya yerleşmesinden dolayı almıştır. Adana'nın en çok göç alan ilçesidir.</p>
+    </div>
+  </div>
+</center>
+
+</div>
+</div>
+<hr class="divs"><h2 class="baslik2"><b>KÜLTÜREL BİLGİLER</b></h2>
+<div class="divs"><br><p>Seyhan ve Ceyhan Nehirlerinin suladığı verimli topraklar ve coğrafi konumu nedeni ile tarih öncesi çağlardan günümüze kadar değişik Medeniyetlerin hüküm sürdüğü Çukurova’nın kültürünü bu uygarlıklar oluşturmuştur.Çukurova’da hüküm sürmüş Uygarlıkların etkileri Adana'nın kültür yaşamında kendini göstermektedir. Bir kültür mozaiğine dönüşen Adan ve Çukurova kültürünü önemli şekilde etkileyen gruplar özellikle göçebe Türkmen ve Yörük aşiretleridir. </p><p>Örnek olarak aşağıdaki videoda Adananın sahip olduğu kültürel yapıyı izleyebilirsiniz.</p><iframe  width="560" height="315" src="https://www.youtube.com/embed/uqzogPKEvLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br id="mimari">
+<hr class="divs"><h2 class="baslik2" id="mimari"><b>Adana Mimarisi</b></h2>
+<div class="divs"><br><p>Adana mimarisinin altın çağı 15. yüzyılın sonları ve Ramazanoğulları'nın Adana'yı başkenti olarak seçtiği 16. yüzyıldır. Şehir o dönemde birçok yeni mahallelerin kurulmasıyla beraber süratle büyür. Adana'nın tarihi açıdan dönüm noktası sayılabilecek birçok yapısı bu dönemde inşa edildiği için Memlüklü ve Selçuklu mimarisi Adana'nın mimarlık tarihinde önemli bir yer tutar.</p></div>
+
+<tr>
+  <td><div class="w3-card-4 divs" id="dd" style="width:50%">
+    <img src="slider/tp1.jpg" alt="yüreğir" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="baslik2"><b style="color: brown;">Tepebağ Evleri</b></p>
+      <p>Tepebağ Höyüğü ’nü diğerlerinden ayıran en önemli özelliği şehir merkezinde kalması ve zamanla eski katmanların üzerine yeni yapıların yapılmasıdır. Günümüzde Tepebağ Evlerinin altında bu höyük yer almaktadır. 8000 yıllık olan Tepebağ Höyüğü’nün yerleşim yeri olarak tercih edilmesinin en önemli nedenlerinden birisi Adana kent merkezindeki tek yükselti olmasıdır.</p>
+    </div>
+  </div></td>
+  <td><div class="w3-card-4 divs" id="dd" style="width:50%">
+    <img src="slider/tk.jpg" alt="Tas koprü" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="baslik2"><b style="color: brown;">TAŞ KÖPRÜ</b></p>
+      <p>Adana'nın simgesi olarak kabul edilen köprü, bir Roma dönemi eseridir. Taşköprü'nün Roma İmparatoru Hadrianus tarafından yaptırıldığı ve Roma İmparatoru I. Justinianus zamanında ciddi şekilde onarıldığı aktarılmaktadır.310 metre uzunluğundaki köprünün genişliği 11.40 metredir. Ayrıca Taşköprü dünyada hâlen kullanılan en eski köprülerden biridir.</p>
+    </div>
+  </div></td>
+</tr><br id="mtfk">
+<hr class="divs"><h2 class="baslik2"><b>Adana Mutfağı</b></h2>
+<div class="divs" id="mutfak"><br><p>Adana mutfağı birbirinden farklı yemekler, kebaplar, kahvaltılık ve hamur işleri ile ülkemizin ünlü mutfaklarından biridir. Her yörenin kendine has lezzetleri olmasında kültürün, coğrafyanın ve tarihin büyük etkileri vardır. Adana’nın yöresel lezzetlerini ortaya çıkaran faktörler de bunlardan ibaret. Dağlık alanlarının yanı sıra deniz ile bağdaşan coğrafyası, geçmişten bugüne göç dalgalarının bir merkezi olması gibi faktörler Adana mutfağını zenginleştirmiştir.
+
+</p></div>
+<h2 class="baslik2" style="text-align: left;" id="altb"><b>Adana Kebap</b></h2>
+<div class="divs" id="mutfak"><br><img src="slider/mutfak.jpg" width="200" height="200" align="right" style="float: right;margin-right:40px right;margin-left: 15px">Adana kebabı, şehrin adını en çok duyurduğu bugün ülkemizin dört bir yanında restoranlarda Adana dürüm, Adana kebap olarak menülere giren lezzetidir. Adana’nın meşhur lezzeti Adana kebabını her yerde deneyimleyebilirsiniz ancak gerçek anlamda bir Adana kebap yemek isterseniz rotanızı kebabın ana vatanı olan Adana’ya yöneltmelisiniz. Adana’nın dürümcülerinde ve restoranlarında kolayca bulabileceğiniz Adana kebap acılı ve acısız seçenekleri ile müşterilere sunuluyor.</div>
+
+<h2 class="baslik2" style="text-align: left;" id="altb"><b>Şırdan Dolması</b></h2>
+<div class="divs" id="mutfak"><br><img src="slider/sirdan.jpeg" width="200" height="200" align="right" style="float: right;margin-right:40px right;margin-left: 15px">Şırdan dolması, Adana dendiğinde akla ilk gelen yöresel lezzetlerden biri olarak biliniyor. Yöre halkının sürekli tükettiği ve genellikle kuzu şırdanından yapılan bu dolmanın tarifi de yine Adana’ya özel olan bir tariftir. Yolunuz düşer de Adana’da bulunursanız mutlaka şırdan dolması deneyimleyebileceğiniz restoranlara uğramalısınız. <br><br><br>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/hh57_f8DMGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>Daha fazla Adana lezzetleri hakkında bilgi sahibi olmak istiyorsanız yukarıdaki videoyu izleyebilirsiniz.</p> 
+</div>
+
+<section id= "features" class="sectionArea" class="divs">
+  
+    <h2   style="text-align: center;" class="divs"><br><b id="ileti">İLETİŞİM</b></h2>
+ 
+</section>
+
+<section class="divs" id= "iresim" class="resim">
+  <div id = "anabaşlık" class="başlık">
+    
+    <div class="iletisim-form">
+      <form class="form-style">
+        <ul>
+        <li>
+          <input type="text" name="field1" class="alan-stili bolunmus-alan sola-hiza" placeholder="İsim" />
+          <input type="email" name="field2" class="alan-stili bolunmus-alan saga-hiza" placeholder="Email" />
+ 
+        </li>
+        <li>
+          <input type="text" name="field3" class="alan-stili bolunmus-alan sola-hiza" placeholder="Telefon" />
+          <input type="url" name="field4" class="alan-stili bolunmus-alan saga-hiza" placeholder="Web Sitesi" />
+        </li>
+        <li>
+        <input type="text" name="field3" class="alan-stili tum-alan " placeholder="Konu" />
+        </li>
+        <li>
+          <textarea name="field5" class="alan-stili" placeholder="Mesaj"></textarea>
+        </li>
+        <li>
+        <input type="submit" value="Gönder" />
+        </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="sectionArea divs" style="background-color: rebeccapurple;">
+    <div class="container2">
+      <div class="col3">
+        <div class="footerItem">
+          <h2 style="color: white;">SOSYAL MEDYADAN TAKİP EDİN</h2>
+          <ul class="socialLinks">
+            <li><a href="#"><i class=" fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class=" fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class=" fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class=" fa fa-youtube"></i></a></li>
+          </ul>
+          <p style="color: white;">BU SİTENİN TÜM HAKLARI SAKLIDIR. 2022</p>
+          
+        </div>
+        
+      </div>
+
+    </div>
+    
+
+
+
+  </footer>
+
+
+</body>
+</html>
